@@ -14,7 +14,7 @@
 	transition: 0.3s;
 	&:hover {
 		transform: scale(1.004);
-		box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.2);
 	}
 	&:nth-of-type(-n + 2) {
 		margin-top: 0;
