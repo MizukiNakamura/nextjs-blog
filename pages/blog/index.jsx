@@ -1,26 +1,6 @@
 import Layout from "../../components/layout";
 import fetch from "node-fetch";
-import nl2br from "react-nl2br";
-
-const count = num => {
-	return new Promise(resolve => {
-		setTimeout(() => {
-			console.log(num)
-			resolve()
-		}, 1000)
-	})
-}
-
-const countDown = async countNum => {
-	for (let i = 0; i < countNum; i++) {
-		await count(countNum - i)
-	}
-}
-
-(async () => {
-	await countDown(3)
-	countDown(3)
-})()
+import BlogList from "../../components/BlogList";
 
 export default function Posts({ posts }) {
 	const ids = [ 1, 2, 3, 4, 5, 6 ]
@@ -29,18 +9,7 @@ export default function Posts({ posts }) {
 		<Layout>
 			<h1>ブログ</h1>
 
-			<div>
-				{posts.contents.map((post, index) => {
-					return (
-						<div key={index}>
-							<h2>{post.title}</h2>
-							<br />
-							{nl2br(post.content)}
-							<img src={post.image.url} />
-						</div>
-					);
-				})}
-			</div>
+			<BlogList posts={posts} />
 
 			<form action="/api/hello" method="post">
 				<input type="text" name="text" id="" />
