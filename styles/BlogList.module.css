@@ -18,6 +18,10 @@
   box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.16);
 }
 
+.blogItem:hover .blogItem__heading::after {
+  opacity: 1;
+}
+
 .blogItem:nth-of-type(-n + 2) {
   margin-top: 0;
 }
@@ -37,10 +41,25 @@
 }
 
 .blogItem__heading {
+  position: relative;
+  display: inline-block;
   margin: 0;
   text-align: center;
   font-size: 1.2rem;
   font-weight: normal;
+}
+
+.blogItem__heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .blogItem__content {
