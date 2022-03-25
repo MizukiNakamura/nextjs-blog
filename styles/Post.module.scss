@@ -1,0 +1,105 @@
+.post {
+	&__title {
+		font-size: 2rem;
+		text-align: center;
+		font-weight: normal;
+		margin-bottom: 1rem;
+	}
+	&__date {
+		text-align: right;
+		color: grey;
+	}
+	&__imgWrapper {
+		position: relative;
+		margin: 2rem auto 0;
+		width: 80%;
+		padding-top: 80%;
+		& > img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	&__body {
+		h2,
+		h3,
+		h4,
+		h5 {
+			position: relative;
+			text-indent: 1rem;
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: 0;
+				height: 4px;
+				width: 100%;
+			}
+		}
+		h2 {
+			font-size: 1.8rem;
+			padding-top: 0.2em;
+			padding-bottom: 0.2em;
+			background-color: rgba($color: grey, $alpha: 0.1);
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 4px;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: red;
+			}
+			&::after {
+				background-color: red;
+			}
+		}
+		h3 {
+			font-size: 1.6rem;
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 2px;
+				height: 100%;
+				background-color: yellow;
+			}
+			&::after {
+				height: 2px;
+				background-color: yellow;
+			}
+		}
+		h4 {
+			font-size: 1.4rem;
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 1px;
+        background-color: green;
+			}
+			&::after {
+				height: 1px;
+				background-color: green;
+			}
+		}
+		h5 {
+			font-size: 1.2rem;
+			&::after {
+				height: 1px;
+				background-color: blue;
+			}
+		}
+	}
+}

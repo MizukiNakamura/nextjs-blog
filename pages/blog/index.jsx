@@ -39,7 +39,8 @@ export async function getStaticProps() {
 			"X-MICROCMS-API-KEY": "ccd5ff7cd8b646f0aaf8e5b775fda01f3f34",
 		},
 	});
-	const posts = await res.json();
+	const files = await res.json();
+	const posts = files.contents
 	return {
 		props: { posts },
 	};
