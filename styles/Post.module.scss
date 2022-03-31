@@ -31,12 +31,14 @@
 		h4,
 		h5 {
 			position: relative;
-			text-indent: 1rem;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
 			&::after {
 				content: "";
 				display: block;
 				position: absolute;
 				bottom: 0;
+				left: 0;
 				height: 4px;
 				width: 100%;
 			}
@@ -87,7 +89,7 @@
 				left: 0;
 				height: 100%;
 				width: 1px;
-        background-color: green;
+				background-color: green;
 			}
 			&::after {
 				height: 1px;
