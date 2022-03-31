@@ -1,7 +1,7 @@
 # Next.js blog サイト
 初めてのNext.jsを用いたwebアプリのリポジトリです。
-vercelを用いてデプロイしたアプリは[こちら](https://sample.com)です。
-https://sample.com
+vercelを用いてデプロイしたアプリは[こちら](https://sample)です。
+https://sample
 
 # ディレクトリ構成
 ```
