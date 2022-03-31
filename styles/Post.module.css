@@ -118,5 +118,5 @@
 
 .post__body h5::after {
   height: 1px;
-  background-color: blue;
+  background-color: red;
 }
