@@ -1,4 +1,4 @@
-# Next.js blog サイト
+# Next.js blog
 初めてのNext.jsを用いたwebアプリのリポジトリです。
 vercelを用いてデプロイしたアプリは[こちら](https://sample)です。
 https://sample
