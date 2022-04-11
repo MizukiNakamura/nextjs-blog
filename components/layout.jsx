@@ -77,10 +77,6 @@ export default function Layout({ children, home }) {
           <Link href="/users">
             <a>Users</a>
           </Link>
-          <br />
-          <Link href="/blog">
-            <a>Blog</a>
-          </Link>
         </div>
       )}
     </div>
